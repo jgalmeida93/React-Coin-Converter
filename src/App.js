@@ -10,13 +10,13 @@ class App extends Component {
         <h1 className="center">Coin converter 💰</h1>
         <div className="container">
           <div className="row">
-            <div className="col s6">
+            <div className="col s12 m6">
               <div className="card hoverable">
                 <Conversor moedaA="USD" moedaB="BRL" />
               </div>
             </div>
 
-            <div className="col s6">
+            <div className="col s12 m6">
               <div className="card hoverable">
               <Conversor moedaA="BRL" moedaB="USD" />
               </div>
@@ -24,13 +24,13 @@ class App extends Component {
           </div>
 
           <div className="row">
-            <div className="col s6">
+            <div className="col s12 m6">
               <div className="card hoverable">
                 <Conversor moedaA="EUR" moedaB="BRL" />
               </div>
             </div>
 
-            <div className="col s6">
+            <div className="col s12 m6">
               <div className="card hoverable">
               <Conversor moedaA="BRL" moedaB="EUR" />
               </div>
