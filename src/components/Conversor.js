@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Conversor.css';
 
 export default class Conversor extends Component {
 
@@ -27,6 +28,8 @@ export default class Conversor extends Component {
 
         })
         .then(json => {
+            
+            // Formato do JSON: {"USD_BRL":4.393898}
             let cotacao = json[de_para];
             let moedaB_valor = (parseFloat(this.state.moedaA_valor) * cotacao).toFixed(2);
             this.setState({ moedaB_valor }); // ou moedaB_valor: moedaB_valor
@@ -36,10 +39,10 @@ export default class Conversor extends Component {
     render() {
         return (
             <div className="conversor">
-                <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
+                <h5 className="center">{this.props.moedaA} para {this.props.moedaB}</h5>
                 <input type="text" onChange={(event) => {this.setState({moedaA_valor: event.target.value})}}/>
-                <input type="button" value="Converter" onClick={this.converter}></input>
-                <h2>{ this.state.moedaB_valor }</h2>
+                <input type="button" className="btn right light-green darken-3" value="Converter" onClick={this.converter}></input>
+                <h5>{ this.state.moedaB_valor }</h5>
             </div>
         );
     }
