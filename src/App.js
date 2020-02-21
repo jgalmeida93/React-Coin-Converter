@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
+        <h1 className="center">Coin converter 💰</h1>
         <div className="container">
           <div className="row">
             <div className="col s6">
@@ -39,6 +39,7 @@ class App extends Component {
         </div>
 
 
+      <p className="center footer"><a href="https://github.com/jgalmeida93/react-coin-converter"><i class="fa fa-github-alt" aria-hidden="true"></i> - jgalmeida</a></p>
 
       </div>
     );
