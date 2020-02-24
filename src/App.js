@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="center">Coin converter 💰</h1>
+        <h1 className="center">Coin converter <span role="img" aria-label="money bag">💰</span></h1>
         <div className="container">
           <div className="row">
             <div className="col s12 m6">
@@ -18,24 +18,12 @@ class App extends Component {
 
             <div className="col s12 m6">
               <div className="card hoverable">
-              <Conversor moedaA="BRL" moedaB="USD" />
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col s12 m6">
-              <div className="card hoverable">
                 <Conversor moedaA="EUR" moedaB="BRL" />
               </div>
             </div>
-
-            <div className="col s12 m6">
-              <div className="card hoverable">
-              <Conversor moedaA="BRL" moedaB="EUR" />
-              </div>
-            </div>
           </div>
+
+
         </div>
 
 
