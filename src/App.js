@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 import Conversor from './components/Conversor';
 import './App.css';
@@ -7,6 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Helmet>
+        <title>Coin converter</title>
+      </Helmet>
         <h1 className="center">Coin converter <span role="img" aria-label="money bag">💰</span></h1>
         <div className="container">
           <div className="row">
